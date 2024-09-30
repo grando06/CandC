@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap&quot; rel="stylesheet">
+    <title>Página de Pagamento</title>
+
+    <style>
+        body {
+            font-family: 'Italiana', serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+            width: 85%;
+            max-width: 1200px; /* Aumentando a largura do formulário */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-left, .form-right {
+            width: 48%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 48px; /* Aumentando o tamanho do título */
+            margin-bottom: 40px; /* Espaço maior entre o título e o formulário */
+        }
+
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            margin-bottom: 20px; /* Aumentando o espaçamento entre os campos */
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 15px; /* Aumentando o padding para tornar os campos maiores */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 18px; /* Aumentando o tamanho da fonte */
+        }
+
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .payment-option {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px; /* Aumentando o tamanho da fonte */
+        }
+
+        .payment-option:hover {
+            background-color: #ddd;
+        }
+
+        .save-button {
+            background-color: #333;
+            color: white;
+            padding: 20px; /* Aumentando o padding para deixar o botão maior */
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            font-size: 22px; /* Aumentando o tamanho da fonte do botão */
+            cursor: pointer;
+        }
+
+        .save-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-left">
+            <a href="index.html">
+            <h1>CandC</h1>
+            </a>
+            <div class="input-group">
+                <label for="pagamento" class="section-title">Pagamento:</label>
+                <select id="pagamento">
+                    <option value="credito">Cartão de Crédito (6x sem Juros)</option>
+                    <option value="debito">Cartão de Débito</option>
+                    <option value="pix">Pix</option>
+                </select>
+            </div>
+
+            <div class="payment-options">
+                <div class="payment-option">Cartão de Crédito (6x sem Juros)</div>
+                <div class="payment-option">Cartão de Débito</div>
+                <div class="payment-option">Pix</div>
+            </div>
+        </div>
+
+        <div class="form-right">
+            <div class="input-group">
+                <label for="destinatario" class="section-title">Destinatário:</label>
+                <input type="text" id="destinatario" placeholder="Nome do destinatário">
+            </div>
+
+            <div class="input-group">
+                <label for="endereco" class="section-title">Endereço:</label>
+                <input type="text" id="endereco" placeholder="Endereço de entrega">
+            </div>
+
+            <div class="input-group">
+                <label for="cep" class="section-title">CEP:</label>
+                <input type="text" id="cep" placeholder="CEP">
+            </div>
+
+            <div class="input-group">
+                <label for="numero" class="section-title">Número:</label>
+                <input type="text" id="numero" placeholder="Número do endereço">
+            </div>
+
+            <button class="save-button">Salvar</button>
+        </div>
+    </div>
+</body>
+</html>

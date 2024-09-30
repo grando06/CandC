@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    <link rel="preconnect" href="https://fonts.gstatic.com&quot; crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap&quot; rel="stylesheet">
+    <title>Coleção Model X</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .catalogo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .catalogo-titulo {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .catalogo-subtitulo {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .produto-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .produto-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Garante que as imagens fiquem dentro dos limites */
+        }
+        .produto-item img {
+            width: 100%; /* Ajusta a imagem para preencher o quadrado */
+            height: 200px; /* Ajusta a altura fixa das imagens */
+            object-fit: cover; /* Faz a imagem cobrir o quadrado sem distorcer */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="catalogo-container">
+        <a href="index.html">
+            <h1 class="catalogo-titulo">CandC</h1>
+        </a>
+        <input type="text" placeholder="Pesquisar">
+
+        <h2 class="catalogo-subtitulo">COLEÇÃO MODEL X</h2>
+        <div class="produto-grid">
+            <div class="produto-item">
+                <a href="detalhe.html">
+                    <img src="b1.png" alt="Bolsa 1">
+                </a>
+            </div>
+            <div class="produto-item">
+                <img src="b2.png" alt="Bolsa 2">
+            </div>
+            <div class="produto-item">
+                <img src="b3.png" alt="Bolsa 3">
+            </div>
+            <div class="produto-item">
+                <img src="b4.png" alt="Bolsa 4">
+            </div>
+            <div class="produto-item">
+                <img src="b5.png" alt="Bolsa 5">
+            </div>
+            <div class="produto-item">
+                <img src="b6.png" alt="Bolsa 6">
+            </div>
+            <div class="produto-item">
+                <img src="b7.png" alt="Bolsa 7">
+            </div>
+            <div class="produto-item">
+                <img src="b9.png" alt="Bolsa 8">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

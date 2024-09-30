@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Conta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            text-align: center;
+        }
+        .form-container h1 {
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', serif;
+            font-size: 42px; /* Tamanho do título maior */
+        }
+        .form-container input {
+            width: calc(100% - 22px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 18px; /* Tamanho maior para os campos de input */
+        }
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 18px; /* Tamanho maior para o botão */
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>CandC</h1>
+    <form action="#" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="text" name="cpf" placeholder="CPF" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="endereco" placeholder="Endereço" required>
+        <input type="tel" name="telefone" placeholder="Telefone" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+
+        <a href="catalogo.html">
+             type="submit">Salvar</button>
+        
+    </form>
+</div>
+
+</body>
+</html>
